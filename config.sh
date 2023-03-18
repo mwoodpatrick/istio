@@ -1,5 +1,5 @@
 #################################################################################
-# MANDATORY SETTINGS for some componentes. You need to customize these settings #
+# MANDATORY SETTINGS for some components. You need to customize these settings #
 #################################################################################
 #                                                                               #
 # In some cases you see two options for the same variable, one of them in       #
@@ -19,21 +19,13 @@
 # to have everything aligned as there are some dependencies (unless you know what you are doing :-))
 #
 export SLACK_ENABLE="no"
-#export SLACK_ENABLE="yes"
 export GRAFANA_CLOUD_ENABLE="no"
-#export GRAFANA_CLOUD_ENABLE="yes"
 export GOLDILOCKS_ENABLE="no"
-#export GOLDILOCKS_ENABLE="yes"
-export NGINX_ENABLE="no"
 export NGINX_ENABLE="yes"
-export KUBERNETES_DASHBOARD_ENABLE="no"
-#export KUBERNETES_DASHBOARD_ENABLE="yes"
+export KUBERNETES_DASHBOARD_ENABLE="yes"
 export ISTIO_ENABLE="no"
-export ISTIO_ENABLE="yes"
 export KEDA_ENABLE="no"
-#export KEDA_ENABLE="yes" 
 export HPA_ENABLE="no"
-export HPA_ENABLE="yes"   # This disables KEDA automatically
 
 #
 # You can enable patching resource settings for objects that don't offer this per values.yaml or other means
