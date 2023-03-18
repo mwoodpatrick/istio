@@ -57,8 +57,8 @@ fi
 # You can insert the webhook value directly, but this may expose the secret to source control. A simple way to
 # avoid this is to enter the values to a file external to the source control, as shown in the second line below. 
 #
-export SLACKWEBHOOK="YOUR-WEBHOOK-URL-HERE"
-#export SLACKWEBHOOK=$(cat ${PROJECTHOME}/../.slack/SLACKWEBHOOK.url)
+#export SLACKWEBHOOK="YOUR-WEBHOOK-URL-HERE"
+export SLACKWEBHOOK=$(cat ${PROJECTHOME}/../.slack/SLACKWEBHOOK.url)
 
 #
 # Grafana Cloud settings. You need to pickup six details from your Grafana Cloud Portal: a numeric username 
@@ -92,7 +92,7 @@ export PROM_METRICS_PUBLISHER_URL="https://prometheus-prod-10-prod-us-central-0.
 ###################################################
 
 # K3D Config
-export CLUSTER="mycluster"  # Cluster name
+export CLUSTER="westie-dev" # Cluster name
 export HTTPPORT=8080        # Port for HTTP access to Grafana/Prometheus/Alertmanager in this cluster
 export ISTIOPORT=8081       # For for HTTP through Istio
 [ -z ${KUBECONFIG} ] && export KUBECONFIG=~/.k3d/kubeconfig-${CLUSTER}.yaml   # the likely KUBECONFIG value
